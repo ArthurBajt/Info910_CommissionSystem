@@ -4,3 +4,4 @@ uvicorn
 fastapi
 pydantic
 pydantic-mongo
+python-multipart

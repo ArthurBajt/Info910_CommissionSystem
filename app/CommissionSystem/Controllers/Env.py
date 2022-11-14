@@ -10,3 +10,4 @@ class Env:
     DATABASE_NAME: str = os.getenv("DATABASE_NAME")
     APP_SECRET: str = os.getenv("APP_SECRET")
     APP_PORT: int = int(os.getenv("APP_PORT"))
+    APP_SALT: bytes = (str(os.getenv("APP_SALT"))).encode("utf-8")

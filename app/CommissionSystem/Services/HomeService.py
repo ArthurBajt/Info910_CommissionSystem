@@ -1,9 +1,10 @@
 from fastapi import APIRouter
+from fastapi.responses import RedirectResponse
 
 
 app: APIRouter = APIRouter(prefix="", tags=["Home"])
 
 
 @app.get('/')
-async def home():
-    return "Hello World"
+def home():
+    return RedirectResponse(url='/docs')

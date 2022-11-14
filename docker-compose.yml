@@ -13,5 +13,6 @@ services:
   mongodb:
     image: mongo
     container_name: mongodb-commission
+    command: mongod --port 27018
     ports:
-      - "27017:27017"
+        - "27018:27018"
